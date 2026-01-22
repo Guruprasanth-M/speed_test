@@ -1,0 +1,55 @@
+SPEEDTEST PROJECT – TODO
+
+PHASE 1: CORE CLI (FOUNDATION)
+[✔] Create project structure
+[✔] Setup Python virtual environment (venv)
+[✔] Implement get_ip.py
+    - Hostname
+    - Local IP
+    - Public IP
+[ ] Implement latency.py
+    - HTTP-based ping
+    - Multiple samples
+    - Average latency (ms)
+[ ] Implement download_test.py
+    - Fixed-size payload download
+    - Measure time
+    - Calculate Mbps
+[ ] Implement upload_test.py
+    - Fixed-size payload upload
+    - Measure time
+    - Calculate Mbps
+[ ] Create cli.py
+    - Combine IP, latency, download, upload
+    - Clean terminal output
+
+PHASE 2: SPEEDTEST SERVER (BACKEND)
+[ ] Create API server (Flask/FastAPI)
+[ ] Implement /api/ping
+[ ] Implement /api/download
+[ ] Implement /api/upload
+[ ] Implement /api/info (IP + ISP from server side)
+[ ] Test APIs using curl
+
+PHASE 3: DOCKERIZATION
+[ ] Create requirements.txt
+[ ] Write Dockerfile for server
+[ ] Build Docker image
+[ ] Run container locally
+[ ] Test CLI against Docker server
+
+PHASE 4: WEB INTERFACE
+[ ] Create basic HTML layout
+[ ] Implement latency test in browser (JS)
+[ ] Implement download test in browser
+[ ] Implement upload test in browser
+[ ] Display IP & ISP info
+[ ] Show real-time progress
+
+PHASE 5: POLISH & PRODUCTION
+[ ] Improve accuracy (larger payloads)
+[ ] Add retries & error handling
+[ ] Clean logging
+[ ] Update README.md
+[ ] Final Git cleanup (.gitignore)
+[ ] Optional: Push image to Docker Hub
